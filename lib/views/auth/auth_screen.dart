@@ -74,12 +74,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen> with SingleTickerProvid
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           const SizedBox(height: 48),
-                          Icon(
-                            Icons.check_circle_rounded,
-                            size: 64,
-                            color: theme.colorScheme.primary,
-                          ),
-                          const SizedBox(height: 16),
                           Text(
                             'Planora',
                             textAlign: TextAlign.center,
