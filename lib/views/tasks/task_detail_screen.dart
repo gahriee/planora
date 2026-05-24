@@ -151,9 +151,9 @@ class _TaskDetailScreenState extends ConsumerState<TaskDetailScreen> {
                     selectedForegroundColor: Colors.white,
                   ),
                   segments: const [
-                    ButtonSegment(value: TaskStatus.todo, label: Text('To Do')),
-                    ButtonSegment(value: TaskStatus.inProgress, label: Text('In Progress')),
-                    ButtonSegment(value: TaskStatus.done, label: Text('Done')),
+                    ButtonSegment(value: TaskStatus.todo, label: FittedBox(fit: BoxFit.scaleDown, child: Text('To Do', softWrap: false))),
+                    ButtonSegment(value: TaskStatus.inProgress, label: FittedBox(fit: BoxFit.scaleDown, child: Text('In Progress', softWrap: false))),
+                    ButtonSegment(value: TaskStatus.done, label: FittedBox(fit: BoxFit.scaleDown, child: Text('Done', softWrap: false))),
                   ],
                   selected: {task.status},
                   onSelectionChanged: (set) {

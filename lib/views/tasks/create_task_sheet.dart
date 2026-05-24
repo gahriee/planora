@@ -80,11 +80,11 @@ class _CreateTaskSheetState extends ConsumerState<CreateTaskSheet> {
                   children: [
                     TextField(
                       controller: _titleController,
-                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
+                      style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
                       decoration: InputDecoration(
                         hintText: 'What needs to be done?',
                         border: InputBorder.none,
-                        hintStyle: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                        hintStyle: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           fontWeight: FontWeight.bold,
                           color: Theme.of(context).textTheme.bodySmall?.color?.withValues(alpha: 0.3),
                         ),
